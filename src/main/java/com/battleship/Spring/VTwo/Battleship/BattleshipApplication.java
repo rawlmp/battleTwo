@@ -17,14 +17,18 @@ public class BattleshipApplication {
                                       GameRepo gRepo,
                                       GamePlayerRepo gpRepo){
 		return args -> {
+
+			//Adding PLayers
 			Player p1 = new Player("Mike");
 			Player p2 = new Player("Raul");
 			Player p3 = new Player("Luis");
 
+			//Adding Games
 			Game g1 = new Game();
 			Game g2 = new Game();
 			Game g3 = new Game();
 
+			//Adding GamePlayers
 			GamePlayer gp1 = new GamePlayer(p1, g1);
 			GamePlayer gp2 = new GamePlayer(p2, g1);
 			GamePlayer gp3 = new GamePlayer(p1, g2);
